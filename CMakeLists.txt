@@ -1,0 +1,6 @@
+project(linux_input_event_utils C)
+cmake_minimum_required(VERSION 3.16)
+add_executable(ie2t ie2t.c)
+target_compile_options(ie2t PRIVATE -Wall -Wextra -Wpedantic -Werror)
+add_executable(t2ie t2ie.c)
+target_compile_options(t2ie PRIVATE -Wall -Wextra -Wpedantic -Werror)
